@@ -1,18 +1,25 @@
-// @ts-nocheck
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './pages/home'
+import Explore from './pages/explore'
+import Contact from './pages/contact'
+import About from './pages/about'
+import Navbar from './pages/navbar'
 
-import React from "react";
-import { Header } from "./components/header/header";
-import { Sidebar } from "./components/sidebar/sidebar";
-import { MainContent } from "./components/main-content/main-content";
-import { Footer } from "./components/footer/footer";
-
-export const App = () => {
+function App() {
   return (
     <>
-    <Header/>
-    <Sidebar />
-    <MainContent />
-    <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/explore' element={<Explore />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
+
+export default App

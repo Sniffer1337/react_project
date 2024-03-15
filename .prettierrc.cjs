@@ -1,7 +1,7 @@
 module.exports = {
     arrowParens: 'avoid',
     bracketSpacing: true,
-    htmlWhiteSpaceSensitivity: 'css',
+    htmlWhitespaceSensitivity: 'css',
     insertPragma: false,
     jsxBracketSameLine: false,
     jsxSingleQuote: true,
@@ -14,4 +14,4 @@ module.exports = {
     tabWidth: 2,
     trailingComma: 'none',
     useTabs: false
-}
+  }
