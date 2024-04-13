@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 * {
   padding: 0;
@@ -10,4 +12,10 @@
 
 body {
   background-color: #ffffff;
+  color: #333; /* Dark text for light theme */
+}
+
+.dark body {
+  background-color: #333333; /* Dark background for dark theme */
+  color: #fff; /* Light text for dark theme */
 }
