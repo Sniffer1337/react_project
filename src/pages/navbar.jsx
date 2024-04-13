@@ -83,25 +83,6 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Search Input Field, toggled visibility */}
-        {searchOpen && (
-          <div className='absolute top-full right-0 mt-2'>
-            <input
-              type='text'
-              placeholder='Search...'
-              value={searchInput}
-              onChange={handleInputChange}
-              className='p-2 border border-gray-300 rounded'
-            />
-            <button
-              onClick={handleSearch}
-              className='p-2 bg-green-500 text-white rounded ml-1'
-            >
-              Search
-            </button>
-          </div>
-        )}
-
         {/* Conditional Rendering of Mobile Menu */}
         {menuOpen && (
           <div className='fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-end'>
