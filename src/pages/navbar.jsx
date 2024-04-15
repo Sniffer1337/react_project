@@ -86,12 +86,12 @@ export const Navbar = () => {
         {/* Conditional Rendering of Mobile Menu */}
         {menuOpen && (
           <div className='fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-end'>
-            <div className='w-1/2 sm:w-1/3 bg-white p-5'>
+            <div className='w-1/2 sm:w-1/3 bg-white p-5 dark:text-green-600'>
               <AiOutlineClose
                 onClick={() => setMenuOpen(false)}
                 className='cursor-pointer mb-5'
               />
-              <ul className='space-y-4'>
+              <ul className='space-y-4 dark:text-green-600'>
                 <li>
                   <Link to='/explore' onClick={() => setMenuOpen(false)}>
                     Explore
